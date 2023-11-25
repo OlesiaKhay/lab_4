@@ -11,7 +11,6 @@ def task() -> None:
     import json
     with open("input.csv", 'r') as file:
         data = list(csv.reader(file, delimiter= ','))
-    file.close
     keys = data[0]
     res = []
     for elem in data[1:]:
